@@ -9,5 +9,4 @@ public class Coche {
         {
             return String.format("Marca: %s, Modelo: %s, Año: %d.", marca, modelo, anio);
         }
-    }
 }
