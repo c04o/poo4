@@ -8,23 +8,23 @@ public class CuentaBancaria {
     {
         this.saldo = saldo;
         this.titular = titular;
-        System.out.println("Se creo la cuenta con titular: " + this.titular + " y saldo: " + this.saldo + "C$");
+        System.out.println("Titular: " + this.titular + ". Saldo: C$" + this.saldo);
     }
 
-    public void depositarDinero(double cargo)
+    public void depositar(double monto)
     {
-        this.saldo += cargo;
-        System.out.println("Se depositaron " + cargo + "C$ de manera exitosa.");
+        this.saldo += monto;
+        System.out.println("Se depositaron C$" + monto);
     }
 
-    public void retirarDinero(double retiro)
+    public void retirar(double monto)
     {
-        this.saldo -= retiro;
-        System.out.println("Se retiraron " + retiro + "C$ de manera exitosa.");
+        this.saldo -= monto;
+        System.out.println("Se retiraron C$" + monto);
     }
 
     public double obtenerSaldo()
     {
         return saldo;
     }
-}2
+}
